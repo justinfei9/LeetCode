@@ -1,4 +1,4 @@
-class MaximumScoreAfterSplittingaString_1422{
+public class MaximumScoreAfterSplittingaString_1422{
     public int maxScore(String s) {
         int max = 0;
         int ones =0;
