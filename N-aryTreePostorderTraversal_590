@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+class N-aryTreePostorderTraversal_590{
+    public List<Integer> postorder(Node root) {
+        List<Integer> list = new ArrayList<>();
+        traverse(root,list);
+        return list;
+    }
+    public void traverse(Node root, List<Integer> list){
+        if(root==null)
+        {
+            return;
+        }
+        for (int i = 0; i < root.children.size(); i++) {
+            traverse(root.children.get(i), list);
+        }
+
+        list.add(root.val);
+    }
+}
